@@ -9,3 +9,5 @@ steps:
     command: |
       date
       echo "hello world"
+      
+    something
