@@ -9,3 +9,12 @@ steps:
     command: |
       date
       echo "hello world"
+  - type: Command
+    name: "compress the repo"
+    command: |
+      tar -cvzf repo.tgz ./
+outputArtifacts:
+  - name: artifact
+    type: BINARY
+    location: ${OCI_WORKSPACE_DIR}/repo/repo.tgz
+    
